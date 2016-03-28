@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" />
+<meta name="author" content="gencyolcu" />
+<script src="js/script.js"></script>
+<title>SE371 Calculator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<style>
+#eq {
+	width: 100%;
+}
+</style>
+
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<h2>Calculator Using javascript</h2>
+				<p>By sulaiman Aloraini</p>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<table class="table table-bordered">
+					<caption>
+						<form>
+							<input id="content" class="form-control"> <br>
+							<button type="reset" value="clear" class="btn btn-primary">
+								Clear</button>
+						</form>
+					</caption>
+
+					<tr>
+						<th><button name="seven" value="7" onclick="run7()"
+								class="btn btn-info">7</button></th>
+						<th><button name="eight" value="8" onclick="run8()"
+								class="btn btn-info">8</button></th>
+						<th><button name="nine" value="9" onclick="run9()"
+								class="btn btn-info">9</button></th>
+						<td><button name="plus" value="plus" onclick="runplus()"
+								class="btn btn-warning">+</button></td>
+						<td><button name="Multi" value="plus" onclick="runMulti()"
+								class="btn btn-warning">*</button></td>
+					</tr>
+
+					<tr>
+						<th><button name="four" value="4" onclick="run4()"
+								class="btn btn-info">4</button></th>
+						<th><button name="five" value="5" onclick="run5()"
+								class="btn btn-info">5</button></th>
+						<th><button name="six" value="6" onclick="run6()"
+								class="btn btn-info">6</button></th>
+						<td><button name="minus" value="minus" onclick="runMinus()"
+								class="btn btn-warning">-</button></td>
+						<td><button name="Divi" value="plus" onclick=" runDivi()"
+								class="btn btn-warning">/</button></td>
+					</tr>
+
+					<tr>
+						<th><button name="one" value="1" onclick="run1()"
+								class="btn btn-info">1</button></th>
+						<th><button name="two" value="2" onclick="run2()"
+								class="btn btn-info">2</button></th>
+						<th><button name="three" value="3" onclick="run3()"
+								class="btn btn-info">3</button></th>
+						<td colspan="2"><button name="equal" value="equal"
+								onclick="eq()" class="btn btn-warning" id="eq">=</button></td>
+					</tr>
+					
+					<tr>
+						<th colspan ="3"><button name="one" value="0" onclick="run0()"
+								class="btn btn-info" id="eq">0</button></th>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
+</body>
+</html>
